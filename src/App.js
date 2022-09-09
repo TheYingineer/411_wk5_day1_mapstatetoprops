@@ -9,9 +9,13 @@ import store from './redux/store'
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
-        <Navigation />
-        <Router />
+      {/* // from react redux, set up in state.js in redux folder, give access to everything we put in the store.js */}
+      <BrowserRouter> 
+      {/* //router info */}
+        <Navigation /> 
+        {/* //Top header in blue */}
+        <Router /> 
+        {/* // where you switch btw tabs, example: home, about, dashboard */}
       </BrowserRouter>
     </Provider>
   );
